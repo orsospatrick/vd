@@ -7,7 +7,7 @@
 // * Developer      :  webrok (https://www.fiverr.com/webrok?up_rollout=true)
 // ==================================================
 
-(function($) {
+(function ($) {
   "use strict";
 
   // Vanilla Calendar - Start
@@ -21,16 +21,16 @@
 
   // Back To Top - Start
   // --------------------------------------------------
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       $('.backtotop:hidden').stop(true, true).fadeIn();
     } else {
       $('.backtotop').stop(true, true).fadeOut();
     }
   });
-  $(function() {
-    $(".scroll").on('click', function() {
-      $("html,body").animate({scrollTop: 0}, "slow");
+  $(function () {
+    $(".scroll").on('click', function () {
+      $("html,body").animate({ scrollTop: 0 }, "slow");
       return false
     });
   });
@@ -75,12 +75,12 @@
   // Tilt - Start
   // --------------------------------------------------
   $('.tilt').tilt({
-    maxTilt:        12,
-    perspective:    1000,
-    scale:          1,
-    speed:          1000,
-    glare:          false,
-    maxGlare:       1
+    maxTilt: 12,
+    perspective: 1000,
+    scale: 1,
+    speed: 1000,
+    glare: false,
+    maxGlare: 1
   });
   // Tilt - End
   // --------------------------------------------------
@@ -141,21 +141,21 @@
     zoom: {
       enabled: true,
       duration: 300,
-      opener: function(element) {
+      opener: function (element) {
         return element.find('img');
       }
     }
-    
+
   });
   // Videos & Images popup - End
   // --------------------------------------------------
 
   // Multy Countdown - Start
   // --------------------------------------------------
-  $('.countdown_timer').each(function(){
-    $('[data-countdown]').each(function() {
+  $('.countdown_timer').each(function () {
+    $('[data-countdown]').each(function () {
       var $this = $(this), finalDate = $(this).data('countdown');
-      $this.countdown(finalDate, function(event) {
+      $this.countdown(finalDate, function (event) {
         var $this = $(this).html(event.strftime(''
           + '<li class="days_count"><strong>%D</strong><span>Days</span></li>'
           + '<li class="hours_count"><strong>%H</strong><span>Hours</span></li>'
@@ -193,24 +193,24 @@
     // verticalSwiping: true,
     asNavFor: '.main_slider',
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 4,
+        }
       }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 4,
-      }
-    }
     ]
   });
 
@@ -307,13 +307,13 @@
     prevArrow: ".c2c_arrow_left",
     nextArrow: ".c2c_arrow_right",
     responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
-    }
     ]
   });
 
@@ -330,20 +330,20 @@
     prevArrow: ".c3c_arrow_left",
     nextArrow: ".c3c_arrow_right",
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
       }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    }
     ]
   });
 
@@ -360,27 +360,27 @@
     prevArrow: ".c4c_arrow_left",
     nextArrow: ".c4c_arrow_right",
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
       }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    }
     ]
   });
 
@@ -397,32 +397,32 @@
     prevArrow: ".c5c_arrow_left",
     nextArrow: ".c5c_arrow_right",
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        centerPadding: '40px',
-        centerMode: true
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '40px',
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
       }
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4
-      }
-    }
     ]
   });
 
@@ -439,38 +439,38 @@
     prevArrow: ".c6c_arrow_left",
     nextArrow: ".c6c_arrow_right",
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        centerPadding: '40px',
-        centerMode: true
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '40px',
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1461,
+        settings: {
+          slidesToShow: 5
+        }
       }
-    },
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4
-      }
-    },
-    {
-      breakpoint: 1461,
-      settings: {
-        slidesToShow: 5
-      }
-    }
     ]
   });
   // Carousels - End
@@ -490,34 +490,34 @@
     cssEase: 'linear',
     pauseOnHover: true,
     responsive: [
-    {
-      breakpoint: 576,
-      settings: {
-        speed: 800,
-        autoplay: false,
-        slidesToShow: 1
+      {
+        breakpoint: 576,
+        settings: {
+          speed: 800,
+          autoplay: false,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          speed: 800,
+          autoplay: false,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        speed: 800,
-        autoplay: false,
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4
-      }
-    }
     ]
   });
   // Carousels - End
@@ -579,8 +579,8 @@
     opacity: 0.8,
     hoverOpacity: 1,
     activeOpacity: 1,
-    separatorColor: "#D16527",
-    bulletColor: "#D16527",
+    separatorColor: "#0072BF",
+    bulletColor: "#0072BF",
     arrowColor: "#FFFFFF",
   });
   // Image Before After - End
@@ -588,7 +588,7 @@
 
   // Priceing Range - Start
   // --------------------------------------------------
-  if($("#slider-range").length){
+  if ($("#slider-range").length) {
     $("#slider-range").slider({
       range: true,
       min: 0,
@@ -598,8 +598,8 @@
         $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
       },
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+      " - $" + $("#slider-range").slider("values", 1));
   }
 
   $('.ar_top').on('click', function () {
@@ -607,9 +607,9 @@
     var result = document.getElementById(getID);
     var qty = result.value;
     $('.proceed_to_checkout .update-cart').removeAttr('disabled');
-    if( !isNaN( qty ) ) {
+    if (!isNaN(qty)) {
       result.value++;
-    }else{
+    } else {
       return false;
     }
   });
@@ -618,14 +618,14 @@
 
   // Quantity Form - start
   // --------------------------------------------------
-  (function() {
-    window.inputNumber = function(el) {
+  (function () {
+    window.inputNumber = function (el) {
       var min = el.attr("min") || false;
       var max = el.attr("max") || false;
       var els = {};
       els.dec = el.prev();
       els.inc = el.next();
-      el.each(function() {
+      el.each(function () {
         init($(this));
       });
       function init(el) {
